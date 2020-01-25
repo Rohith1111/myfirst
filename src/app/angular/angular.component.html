@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <th>Id</th>
+            <th>Email</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>avatar</th>
+        </thead>
+        <tr *ngFor='let op of obj'>
+            <td>{{op.id}}</td>
+            <td>{{op.email}}</td>
+            <td>{{op.first_name}}</td>
+            <td>{{op.last_name}}</td>
+            <td>
+                <img [src]=op.avatar alt="">
+            </td>
+
+        </tr>
+    </table>
+</div>

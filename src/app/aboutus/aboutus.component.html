@@ -1,0 +1,23 @@
+<div class="container">
+
+    <table class="table table-hover">
+
+        <thead>
+            <th>UserId</th>
+            <th>Id</th>
+            <th>Title</th>
+        </thead>
+        <tr *ngFor='let obj of arrayData'>
+            <td>
+                {{obj.userId}}
+            </td>
+            <td>
+                {{obj.id}}
+            </td>
+            <td>
+                {{obj.title}}
+            </td>
+        </tr>
+    </table>
+
+</div>
